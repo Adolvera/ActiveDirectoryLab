@@ -3,7 +3,7 @@
  ### [YouTube Demonstration](https://youtu.be/7eJexJVCqJo)
 
 <h2>Description</h2>
-In this lab we're going to awlk through how to create an Active Directory home lab Environment using Oracle Virtual Box. Configuring and running this lab will help you understand how Windows networking and active directory operates, so I recommend first following this guide or video and then trying it on your own by taking notes so that you can remember all the steps by yourself. This will guarantee that the information sticks and will help you answer any questions you may have. This tutorial doesn't go over installing Oracle VirtualBox, but it does cover installing the server and client as well as a step by step of everything else, so I do recommend installing Oracle VirtualBox prior to this. Thank you!
+In this lab we're going to walk through how to create an Active Directory home lab Environment using Oracle Virtual Box. Configuring and running this lab will help you understand how Windows networking and active directory operates, so I recommend first following this guide or video and then trying it on your own by taking notes so that you can remember all the steps by yourself. This will guarantee that the information sticks and will help you answer any questions you may have. This tutorial doesn't go over installing Oracle VirtualBox, but it does cover installing the server and client as well as a step by step of everything else, so I do recommend installing Oracle VirtualBox prior to this. Thank you!
 <br />
 
 
@@ -20,11 +20,11 @@ In this lab we're going to awlk through how to create an Active Directory home l
 <h2>Program walk-through:</h2>
 
 <p align="center">
-Launch the utility: <br/>
+Launch Oracle VirtualBox: <br/>
 <img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Select the disk:  <br/>
+Create a new Virtual Machine with the following settings:  <br/>
 <img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
