@@ -108,7 +108,47 @@ Next, add this user to the Domain Admins group:  <br/>
 <img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Once labeled, right click on "Internal" network and choose properties:  <br/>
+You may now sign out and log in with the credentials of the new user you just created:  <br/>
+<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+You may now sign out and log in with the credentials of the new user you just created:  <br/>
+<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+After signing back in, go to Server Manager and click on "Add Roles and Features" once again to set up RAS/NAT:  <br/>
+<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Choose Remote Access and continue through prompts, making sure to choose Routing when asked. Click Install at the end:  <br/>
+<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Once installed, go to Tools in Server Manager, and choose Routing and Remote Access:  <br/>
+<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Right click on DC(local) and choose Configure and Enable Routing and Remote Access, choosing the following options through the setup:  <br/>
+<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Once finished, return to "Add Roles and Features", this time choosing DHCP server to install:  <br/>
+<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Once installed, go to Tools in Server Manager again and choose DHCP:  <br/>
+<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Next, open up dc.name.com and open up IPv4, right clicking it and choosing "New Scope...":  <br/>
+<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+From here, fill in prompts as follows:  <br/>
+<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+ <br />
+<br />
+Once finished, we will now use a PowerShell script to populate users in our domain. Download the script from the following url: <url>https://github.com/joshmadakor1/AD_PS/archive/master.zip<url/><br/>
 <img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
