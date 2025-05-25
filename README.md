@@ -100,7 +100,7 @@ Once restarted, go to Start -> Adminstrative Tools -> Active Directory Users and
 <img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-From here, create a new Organizational Unit and create an User inside of that unit:  <br/>
+From here, create a new Organizational Unit titled "_USERS" and create an User inside of that unit:  <br/>
 <img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
@@ -146,9 +146,41 @@ Next, open up dc.name.com and open up IPv4, right clicking it and choosing "New 
 <br />
 From here, fill in prompts as follows:  <br/>
 <img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
- <br />
+<br />
 <br />
 Once finished, we will now use a PowerShell script to populate users in our domain. Download the script from the following url: <url>https://github.com/joshmadakor1/AD_PS/archive/master.zip<url/><br/>
+<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+After installing, extract folder and add your name to .txt file in order to create a regular user with your name:<br/>
+<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Open up PowerShell ISE through Windows Start, and open the CREATE_USERS file you just downloaded. Put in the following commands to allow for your file to run(you would only do this in virtualization to avoid restrictions):<br/>
+<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Run the script, you will see the users being created. You can confirm afterwards by checking your created "_USERS" folder to see if your users were created:<br/>
+<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Next, leave your DC VirtualBox, and create another Virtual Machine for your Windows 10 client system with the following settings:<br/>
+<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+When prompted after starting virtual machine, choose iso for Windows 10 downloaded earlier to boot into it. Go through Windows 10 installation, making sure to choose Pro version at least to allow for Domain access:<br/>
+<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Once system starts, log in with guest account created during installation. From there go to right click Start -> System -> Rename this PC(advanced), and fill out information as follows:<br/>
+<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+From there, you'll be asked to log in using an account on the domain and then the system will restart after joining domain:<br/>
+<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+From there, you can log in using domain from any account that you created. Your domain has been setup for any further labs you would like to continue!<br/>
 <img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
