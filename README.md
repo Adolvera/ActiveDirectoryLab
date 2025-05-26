@@ -24,7 +24,7 @@ Launch Oracle VirtualBox: <br/>
 <img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Create a new Virtual Machine with the following settings:  <br/>
+Create a new Virtual Machine for Windows Server 2019 with the following settings:  <br/>
 <img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
@@ -32,7 +32,7 @@ Launch the virtual machine and use Windows Server 2019 iso to boot: <br/>
 <img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Follow on screen instructions to install, creating your password in the process(installation may take some time):  <br/>
+Follow on screen instructions to install, creating your password in the process(installation may take some time). Make sure to choose the desktop experience for this tutorial:  <br/>
 <img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
@@ -48,27 +48,7 @@ Label both networks based on which is your "Internet", which should show your IP
 <img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Once labeled, right click on "Internal" network and choose properties:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Double click IPv4 and set as shown below:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Next, right click Start and choose System -> Rename this PC:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Once labeled, right click on "Internal" network and choose properties:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Once labeled, right click on "Internal" network and choose Properties -> TCP/IPv4:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Set to the following information for the IP address:  <br/>
+Once labeled, right click on "Internal" network and choose properties. Double click IPv4 and set as shown below:  <br/>
 <img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
@@ -104,11 +84,7 @@ From here, create a new Organizational Unit titled "_USERS" and create an User i
 <img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Next, add this user to the Domain Admins group:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-You may now sign out and log in with the credentials of the new user you just created:  <br/>
+Next, add this user to the Domain Admins group by right clicking user -> Properties -> Member Of and adding "Domain Admins":  <br/>
 <img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
