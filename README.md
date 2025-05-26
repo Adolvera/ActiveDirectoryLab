@@ -21,7 +21,7 @@ In this lab we're going to walk through how to create an Active Directory home l
 
 <p align="center">
 Launch Oracle VirtualBox: <br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/a/MmlVhxl" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 Create a new Virtual Machine for Windows Server 2019 with the following settings:  <br/>
@@ -124,6 +124,10 @@ From here, fill in prompts as follows:  <br/>
 <img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
+Authorize and refresh domain:  <br/>
+<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
 Once finished, we will now use a PowerShell script to populate users in our domain. Download the script from the following url: <url>https://github.com/joshmadakor1/AD_PS/archive/master.zip<url/><br/>
 <img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
@@ -132,7 +136,7 @@ After installing, extract folder and add your name to .txt file in order to crea
 <img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Open up PowerShell ISE through Windows Start, and open the CREATE_USERS file you just downloaded. Put in the following commands to allow for your file to run(you would only do this in virtualization to avoid restrictions):<br/>
+Open up PowerShell ISE through Windows Start, and open the CREATE_USERS file you just downloaded. Put in the following commands to allow for your file to run(you would only do this in virtualization to avoid restrictions and make sure to set your directory to wherever you placed your folder):<br/>
 <img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
@@ -148,7 +152,7 @@ When prompted after starting virtual machine, choose iso for Windows 10 download
 <img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Once system starts, log in with guest account created during installation. From there go to right click Start -> System -> Rename this PC(advanced), and fill out information as follows:<br/>
+Once system starts, log in with guest account created during installation. From there go to right click Start -> System -> Rename this PC(advanced), and fill out information as follows with your domain name:<br/>
 <img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
